@@ -1,0 +1,1174 @@
+<ids:ids xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd" xmlns:ids="http://standards.buildingsmart.org/IDS">
+  <!--edited with usBIM.IDSeditor 2.3.20.0 (http://www.accasoftware.com)-->
+  <ids:info>
+    <ids:title>Раздел ЦИМ: Архитектурные решения</ids:title>
+    <ids:author>KolosovPD@str.mos.ru</ids:author>
+    <ids:date>2025-08-12</ids:date>
+  </ids:info>
+  <ids:specifications>
+    <ids:specification ifcVersion="IFC4" name="Помещение&#xA;Класс IFC: IfcSpace">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCSPACE</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+        <ids:property dataType="IFCBOOLEAN">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_StudioApart</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код помещения и зоны&#xA;МССК&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_SpaceAndZone_Code</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование помещения и зоны МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_SpaceAndZone_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Площадь">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Area</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Категория функциональной зоны">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Identification</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Zone</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Группа помещений">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Identification</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Group_Type</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер группы помещений">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Identification</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Group_Number</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер помещения">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Identification</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Number</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Подземный этаж">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_BasementFloor</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Плавающая высотная отметка уровня">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_GroundFloor</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Студия (тип квартиры)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_StudioApart</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Стена, перегородка&#xA;Класс IFC: IfcWall">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCWALL</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 20 20 06" />
+              <xs:enumeration value="ЭЛ 30 10 15" />
+              <xs:enumeration value="ЭЛ 30 10 20" />
+              <xs:enumeration value="ЭЛ 30 10 36" />
+              <xs:enumeration value="ЭЛ 30 10 75" />
+              <xs:enumeration value="ЭЛ 30 10 76" />
+              <xs:enumeration value="ЭЛ 30 10 77" />
+              <xs:enumeration value="ЭЛ 30 10 78" />
+              <xs:enumeration value="ЭЛ 30 10 79" />
+              <xs:enumeration value="ЭЛ 30 16 77" />
+              <xs:enumeration value="ЭЛ 30 16 78" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Толщина">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Thickness</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Колонна, пилястра&#xA;Класс IFC: IfcColumn ">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCCOLUMN</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 30 16 15" />
+              <xs:enumeration value="ЭЛ 30 16 25" />
+              <xs:enumeration value="ЭЛ 30 16 40" />
+              <xs:enumeration value="ЭЛ 30 16 42" />
+              <xs:enumeration value="ЭЛ 30 16 50" />
+              <xs:enumeration value="ЭЛ 30 16 51" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Ширина ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Width</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Высота ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Height</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Диаметр">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Diameter</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Лестница &#xA;Класс IFC: IfcStair ">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="IFCSTAIR" />
+              <xs:enumeration value="IFCSTAIRFLIGHT" />
+            </xs:restriction>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 30 24 30" />
+              <xs:enumeration value="ЭЛ 30 24 35" />
+              <xs:enumeration value="ЭЛ 30 24 10" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Пандус, рампа &#xA;Класс IFC: IfcRamp ">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCRAMP</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 30 24 40" />
+              <xs:enumeration value="ЭЛ 30 24 60" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Уклон">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Slope</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Окно, балконный блок&#xA;Класс IFC: IfcWindow">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCWINDOW</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 20 30 24" />
+              <xs:enumeration value="ЭЛ 30 18 09" />
+              <xs:enumeration value="ЭЛ 30 18 40" />
+              <xs:enumeration value="ЭЛ 30 18 52" />
+              <xs:enumeration value="ЭЛ 30 18 52 10" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код материала МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Code</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование материала&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Ширина">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Width</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Высота">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Height</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Дверь, ворота, люк&#xA;Класс IFC: IfcDoor">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCDOOR</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 30 18 20" />
+              <xs:enumeration value="ЭЛ 30 18 20 01" />
+              <xs:enumeration value="ЭЛ 30 18 20 02" />
+              <xs:enumeration value="ЭЛ 30 18 30" />
+              <xs:enumeration value="ЭЛ 30 18 30 10" />
+              <xs:enumeration value="ЭЛ 30 18 30 20" />
+              <xs:enumeration value="ЭЛ 30 18 30 30" />
+              <xs:enumeration value="ЭЛ 30 18 30 31" />
+              <xs:enumeration value="ЭЛ 30 18 50" />
+              <xs:enumeration value="ЭЛ 30 18 50 10" />
+              <xs:enumeration value="ЭЛ 30 18 50 20" />
+              <xs:enumeration value="ЭЛ 35 01 01" />
+              <xs:enumeration value="ЭЛ 35 01 02" />
+              <xs:enumeration value="ЭЛ 40 50 27 06" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код материала МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Code</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование материала&#xA;МССК&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Ширина">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Width</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Высота">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Height</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Фасад, витраж&#xA;Класс IFC: IfcCurtainWall ">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCCURTAINWALL</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 30 10 10" />
+              <xs:enumeration value="ЭЛ 30 10 35" />
+              <xs:enumeration value="ЭЛ 30 10 60" />
+              <xs:enumeration value="ЭЛ 30 10 61" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код материала МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Code</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование материала&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Толщина ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Thickness</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Импост витражной системы (навесного фасада)&#xA;Класс IFC: IfcMember">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCMEMBER</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 30 10 10 20" />
+              <xs:enumeration value="ЭЛ 30 10 61 02" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код материала МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Code</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование материала&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Панель витражной системы (навесного фасада)&#xA;Класс IFC: IfcPlate">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCPLATE</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 30 10 10 10" />
+              <xs:enumeration value="ЭЛ 30 10 61 01" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код материала МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Code</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование материала&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Material_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Перекрытие&#xA;Класс IFC: IfcSlab">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCSLAB</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код элемента МССК ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="ЭЛ 30 10 40" />
+              <xs:enumeration value="ЭЛ 30 10 56" />
+              <xs:enumeration value="ЭЛ 30 10 57" />
+              <xs:enumeration value="ЭЛ 30 10 58" />
+              <xs:enumeration value="ЭЛ 30 10 80" />
+              <xs:enumeration value="ЭЛ 30 16 25" />
+              <xs:enumeration value="ЭЛ 30 24 20" />
+              <xs:enumeration value="ЭЛ 30 24 50" />
+              <xs:enumeration value="ЭЛ 30 24 51" />
+              <xs:enumeration value="ЭЛ 60 20 13" />
+            </xs:restriction>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование элемента&#xA;МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_Element_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Толщина">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Thickness</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции) ">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Зона (СПП в ГНС)&#xA;Класс IFC: IfcSpace">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCSPACE</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+        <ids:property dataType="IFCTEXT">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Identification</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Zone</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <ids:simpleValue>СПП в ГНС</ids:simpleValue>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_ResidentalRoom</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код помещения и зоны&#xA;МССК&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_SpaceAndZone_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <ids:simpleValue>-</ids:simpleValue>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <ids:simpleValue>СПП в ГНС</ids:simpleValue>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование помещения и зоны МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_SpaceAndZone_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Площадь">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Area</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Категория функциональной зоны">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Identification</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Zone</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Подземный этаж">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_BasementFloor</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Плавающая высотная отметка уровня">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_GroundFloor</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Жилая зона">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_ResidentalRoom</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Зона (Общая площадь)&#xA;Класс IFC: IfcSpace">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCSPACE</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+        <ids:property dataType="IFCTEXT">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Identification</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Zone</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <ids:simpleValue>Общая площадь</ids:simpleValue>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_ResidentalRoom</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Код помещения и зоны&#xA;МССК&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_SpaceAndZone_Code</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <ids:simpleValue>ПЗ 03</ids:simpleValue>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование&#xA;">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Name</ids:simpleValue>
+          </ids:baseName>
+          <ids:value>
+            <ids:simpleValue>Общая площадь</ids:simpleValue>
+          </ids:value>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Наименование помещения и зоны МССК">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Common</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_MSSK_SpaceAndZone_Name</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Площадь">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Quantities</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Area</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер объекта (корпуса)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Номер подобъекта (секции)">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Location</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Object_Sub</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Категория функциональной зоны">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Identification</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_Zone</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Подземный этаж">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_BasementFloor</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Плавающая высотная отметка уровня">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_GroundFloor</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required" instructions="Жилая зона">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_ResidentalRoom</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Объект&#xA;Класс IFC: IfcBuilding">
+      <ids:applicability minOccurs="1" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCBUILDING</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCTEXT" cardinality="required">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Project</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_ProjectName</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_Project</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_BuildingAddress</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required">
+          <ids:propertySet>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="RusSet_AGR" />
+            </xs:restriction>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_FNO</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+  </ids:specifications>
+</ids:ids>

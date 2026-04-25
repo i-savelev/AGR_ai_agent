@@ -1,0 +1,198 @@
+# PropertySet Definition File / Файл определения набора свойств IFC
+# Generated for Revit 2022 IFC export (Autodesk IFC Exporter format)
+# Source: "Требования к ЦИМ АГР"
+#
+# Формат строк:
+# PropertySet:	<ИмяНабора>	<I|T>	<IfcClass>
+# 	<ИмяСвойства>			<IFCType>	<RevitParameterName>
+#
+# I = Instance properties (экземпляр)
+# -----------------------------------------------------
+
+PropertySet:	RusSet_AGR	I	IfcCivilElement
+	RUS_LandID			Text	параметр проектировщика или RUS_LandID
+	RUS_AreaSquare			Real	параметр проектировщика или RUS_AreaSquare
+
+PropertySet:	RusSet_Common	I	IfcCivilElement
+	RUS_Name			Text	Имя
+
+PropertySet:	RusSet_Quantities	I	IfcCivilElement
+	RUS_Area			Real	Спроецированная площадь
+
+PropertySet:	RusSet_Project	I	IfcBuilding
+	RUS_ProjectName			Text	RUS_ProjectName
+	RUS_BuildingAddress			Text	параметр проектировщика или RUS_BuildingAddress
+
+PropertySet:	RusSet_AGR	I	IfcBuilding
+	RUS_FNO			Text	RUS_FNO
+
+PropertySet:	RusSet_Common	I	IfcBuildingElementProxy
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Location	I	IfcBuildingElementProxy
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcSpace
+	RUS_MSSK_SpaceAndZone_Code			Text	RUS_MSSK_SpaceAndZone_Code
+	RUS_Name			Text	Имя
+	RUS_MSSK_SpaceAndZone_Name			Text	RUS_MSSK_SpaceAndZone_Name
+
+PropertySet:	RusSet_Quantities	I	IfcSpace
+	RUS_Area			Real	Площадь
+
+PropertySet:	RusSet_Location	I	IfcSpace
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Identification	I	IfcSpace
+	RUS_Zone			Text	параметр проектировщика или RUS_Zone
+	RUS_Group_Type			Text	параметр проектировщика
+	RUS_Group_Number			Text	параметр проектировщика
+	RUS_Number			Text	параметр проектировщика
+
+PropertySet:	RusSet_AGR	I	IfcSpace
+	RUS_BasementFloor			Boolean	RUS_BasementFloor
+	RUS_GroundFloor			Boolean	RUS_GroundFloor
+	RUS_StudioApart			Boolean	RUS_StudioApart
+	RUS_ResidentalRoom			Boolean	RUS_ResidentalRoom
+
+PropertySet:	RusSet_Common	I	IfcWall
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Quantities	I	IfcWall
+	RUS_Thickness			Real	Толщина
+
+PropertySet:	RusSet_Location	I	IfcWall
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcRoof
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика 
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Quantities	I	IfcRoof
+	RUS_Thickness			Real	Толщина
+
+PropertySet:	RusSet_Location	I	IfcRoof
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcColumn
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Quantities	I	IfcColumn
+	RUS_Length			Real	Длина
+	RUS_Width			Real	Ширина
+	RUS_Height			Real	Высота
+	RUS_Diametr			Real	Диаметр
+
+PropertySet:	RusSet_Location	I	IfcColumn
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcStair
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Location	I	IfcStair
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcRamp
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Quantities	I	IfcRamp
+	RUS_Slope			Real	Уклон
+
+PropertySet:	RusSet_Location	I	IfcRamp
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcSlab
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Quantities	I	IfcSlab
+	RUS_Slope			Real	параметр проектировщика или RUS_Slope
+	RUS_Thickness			Real	Толщина
+
+PropertySet:	RusSet_Location	I	IfcSlab
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcWindow
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_MSSK_Material_Code			Text	RUS_MSSK_Material_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+	RUS_MSSK_Material_Name			Text	RUS_MSSK_Material_Name
+
+PropertySet:	RusSet_Quantities	I	IfcWindow
+	RUS_Width			Real	Ширина
+	RUS_Height			Real	Высота
+
+PropertySet:	RusSet_Location	I	IfcWindow
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcDoor
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_MSSK_Material_Code			Text	RUS_MSSK_Material_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+	RUS_MSSK_Material_Name			Text	RUS_MSSK_Material_Name
+
+PropertySet:	RusSet_Quantities	I	IfcDoor
+	RUS_Width			Real	Ширина
+	RUS_Height			Real	Высота
+
+PropertySet:	RusSet_Location	I	IfcDoor
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcCurtainWall
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_MSSK_Material_Code			Text	RUS_MSSK_Material_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Material_Name			Text	RUS_MSSK_Material_Name
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Quantities	I	IfcCurtainWall
+	RUS_Thickness			Real	Толщина
+
+PropertySet:	RusSet_Location	I	IfcCurtainWall
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcMember
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_MSSK_Material_Code			Text	RUS_MSSK_Material_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Material_Name			Text	RUS_MSSK_Material_Name
+
+PropertySet:	RusSet_Location	I	IfcMember
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика
+
+PropertySet:	RusSet_Common	I	IfcPlate
+	RUS_MSSK_Element_Code			Text	RUS_MSSK_Element_Code
+	RUS_MSSK_Material_Code			Text	RUS_MSSK_Material_Code
+	RUS_Name			Text	Имя типа или параметр проектировщика
+	RUS_MSSK_Material_Name			Text	RUS_MSSK_Material_Name
+	RUS_MSSK_Element_Name			Text	RUS_MSSK_Element_Name
+
+PropertySet:	RusSet_Location	I	IfcPlate
+	RUS_Object			Text	параметр проектировщика
+	RUS_Object_Sub			Text	параметр проектировщика

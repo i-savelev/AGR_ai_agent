@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vedomost xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="Vedom_AGR.xsd">
+    <Header>
+        <Title>Ведомость цифровых информационных моделей АГР</Title>
+        <Date>2025-03-20</Date>
+    </Header>
+    <Row>
+        <Position>1</Position>
+        <NameAGR>НН_К00_ПС_АГР</NameAGR>
+        <DescriptionAGR>проектная ситуация</DescriptionAGR>
+    </Row>
+    <Row>
+        <Position>2</Position>
+        <NameAGR>НН_К00_БиО_АГР</NameAGR>
+        <DescriptionAGR>благоустройство и озеленение</DescriptionAGR>
+    </Row>
+    <Row>
+        <Position>3</Position>
+        <NameAGR>НН_К01_С00_АР_АГР</NameAGR>
+        <DescriptionAGR>подвал</DescriptionAGR>
+    </Row>
+    <Row>
+        <Position>4</Position>
+        <NameAGR>НН_К01_С01_АР_АГР</NameAGR>
+        <DescriptionAGR>секция 1</DescriptionAGR>
+    </Row>
+    <Row>
+        <Position>5</Position>
+        <NameAGR>НН_К01_С02_АР_АГР</NameAGR>
+        <DescriptionAGR>секция 2</DescriptionAGR>
+    </Row>
+</Vedomost>

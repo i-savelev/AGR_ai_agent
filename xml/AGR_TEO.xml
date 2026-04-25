@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArchitecturalUrbanPlanningSolution>
+  <ObjectName>Жилой дом</ObjectName>
+  <Date> . </Date>
+  <Address>г. Москва</Address>
+  <CadastralNumbers>
+    <CadastralNumber>77:07:00000001-01</CadastralNumber>
+  </CadastralNumbers>
+  <GPZUNumbers>
+    <GPZUNumber>РФ-77-4-59-3-23-2021-4737</GPZUNumber>
+    <GPZUNumber>РФ-77-4-59-3-23-2020-2852</GPZUNumber>
+    <GPZUNumber>РФ-77-4-59-3-23-2024-6611-0</GPZUNumber>
+    <GPZUNumber>РФ-77-4-59-3-23-2021-6972</GPZUNumber>
+    <GPZUNumber>РФ-77-4-59-3-23-2024-7573-0</GPZUNumber>
+  </GPZUNumbers>
+  <UUID>II0226-10-0001-001</UUID>
+  <ProjectOrganization>ООО "Организация"</ProjectOrganization>
+  <ProjectTeamLead>.</ProjectTeamLead>
+  <ProjectTeam>
+    <Member>.</Member>
+  </ProjectTeam>
+  <WorkTypes>новое строительство</WorkTypes>
+  <FunctionalPurposes>
+    <FunctionalPurpose>Многоэтажный многоквартирный дом</FunctionalPurpose>
+    <FunctionalPurpose>Подземная стоянка</FunctionalPurpose>
+  </FunctionalPurposes>
+  <BuildingHeight>48.16</BuildingHeight>
+  <Area>0.412</Area>
+  <TotalFloorArea>10257.5</TotalFloorArea>
+  <TotalObjectArea>11610.31</TotalObjectArea>
+  <ApartmentsCount>97</ApartmentsCount>
+  <ObjectHeight>48.16</ObjectHeight>
+  <FloorsCount>14</FloorsCount>
+  <TotalApartmentsArea>5314.1</TotalApartmentsArea>
+</ArchitecturalUrbanPlanningSolution>

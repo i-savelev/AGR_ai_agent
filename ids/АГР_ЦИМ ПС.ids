@@ -1,0 +1,62 @@
+<ids:ids xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd" xmlns:ids="http://standards.buildingsmart.org/IDS">
+  <!--edited with usBIM.IDSeditor 2.3.20.0 (http://www.accasoftware.com)-->
+  <ids:info>
+    <ids:title>АГР_ЦИМ ПС_ЦИМ БиО</ids:title>
+  </ids:info>
+  <ids:specifications>
+    <ids:specification ifcVersion="IFC4" name="Участок застройки&#xA;Класс IFC: IfcSite">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCSITE</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCREAL" cardinality="required" instructions="Площадь земельного участка">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_AreaSquare</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required" instructions="Кадастровый номер участка">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_LandID</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification ifcVersion="IFC4" name="Участок застройки&#xA;Класс IFC: IfcCivilElement">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:entity>
+          <ids:name>
+            <ids:simpleValue>IFCCIVILELEMENT</ids:simpleValue>
+          </ids:name>
+        </ids:entity>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCREAL" cardinality="required">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_AreaSquare</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCTEXT" cardinality="required">
+          <ids:propertySet>
+            <ids:simpleValue>RusSet_AGR</ids:simpleValue>
+          </ids:propertySet>
+          <ids:baseName>
+            <ids:simpleValue>RUS_LandID</ids:simpleValue>
+          </ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+  </ids:specifications>
+</ids:ids>
