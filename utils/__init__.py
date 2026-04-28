@@ -8,6 +8,7 @@ from typing import Any
 
 __all__ = [
     "ScanResult",
+    "export_telegram_chat_to_markdown",
     "ensure_directories",
     "ingest_sources",
     "read_docx_text",
@@ -30,6 +31,9 @@ def __getattr__(name: str) -> Any:
     if name == "convert_markdown_to_docx":
         module = import_module(".word_export", __name__)
         return module.convert_markdown_to_docx
+    if name == "export_telegram_chat_to_markdown":
+        module = import_module(".telegram_export", __name__)
+        return module.export_telegram_chat_to_markdown
 
     ingestion_exports = {
         "ScanResult": "ScanResult",
